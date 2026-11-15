@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Beimnet Ashenafi, Information Systems student at Wollo University." />
+  <title>Beimnet Ashenafi | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo">Beimnet<span>.dev</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HOME / HERO ===== -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="greeting" id="greeting">Hello!</p>
+        <h1>I'm Beimnet Ashenafi</h1>
+        <p class="tagline">3rd Year Information Systems Student · Web Developer</p>
+        <p class="hero-text">
+          I build clean, responsive websites and enjoy turning ideas into
+          working web applications using HTML, CSS, and JavaScript.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Portrait of Beimnet Ashenafi" />
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <article class="about-text">
+          <p>
+            I am a third-year Information Systems student at Wollo University,
+            Kombolcha Institute of Technology. I am passionate about web
+            development and how technology can solve real problems in my community.
+          </p>
+          <p>
+            I enjoy building practical systems — especially projects related to
+            libraries and information management. In my free time, I love
+            <strong>painting</strong> and <strong>reading</strong>, which keep me
+            creative and curious.
+          </p>
+        </article>
+        <aside class="about-facts">
+          <h3>Quick Facts</h3>
+          <ul>
+            <li><strong>Name:</strong> Beimnet Ashenafi</li>
+            <li><strong>ID:</strong> 1014/17</li>
+            <li><strong>Program:</strong> Information Systems</li>
+            <li><strong>Year:</strong> 3rd Year</li>
+            <li><strong>University:</strong> Wollo University</li>
+            <li><strong>Location:</strong> Kombolcha, Ethiopia</li>
+            <li><strong>Hobbies:</strong> Painting &amp; Reading</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section alt-bg">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <article class="skill-card">
+          <h3>Technical Skills</h3>
+          <ul class="skill-list">
+            <li><span>HTML5</span><div class="bar"><div class="fill" style="width:90%"></div></div></li>
+            <li><span>CSS3</span><div class="bar"><div class="fill" style="width:85%"></div></div></li>
+            <li><span>JavaScript</span><div class="bar"><div class="fill" style="width:75%"></div></div></li>
+            <li><span>Git &amp; GitHub</span><div class="bar"><div class="fill" style="width:70%"></div></div></li>
+            <li><span>SQL / Databases</span><div class="bar"><div class="fill" style="width:70%"></div></div></li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Soft Skills</h3>
+          <ul class="soft-list">
+            <li>Problem Solving</li>
+            <li>Teamwork &amp; Collaboration</li>
+            <li>Communication</li>
+            <li>Time Management</li>
+            <li>Creativity (from painting)</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="filter-buttons" id="filterButtons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project-card" data-category="web">
+          <img src="images/project1.jpg" alt="Screenshot of library registration website" />
+          <div class="project-info">
+            <h3>Library Registration Website</h3>
+            <p>A responsive web page where students can register for library
+               membership. Includes a registration form with client-side
+               validation built with HTML5, CSS3, and JavaScript.</p>
+            <span class="tag">Web</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="database">
+          <img src="images/project2.jpg" alt="Screenshot of library management system database design" />
+          <div class="project-info">
+            <h3>Library Management System (Database)</h3>
+            <p>A relational database project for managing books, members, and
+               borrowing records. Includes an ER diagram and SQL queries for
+               adding, searching, and tracking loans.</p>
+            <span class="tag">Database</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <img src="images/project3.jpg" alt="Screenshot of personal portfolio website" />
+          <div class="project-info">
+            <h3>Personal Portfolio (This Site)</h3>
+            <p>My own responsive portfolio built with semantic HTML5, CSS3
+               variables for dark mode, and JavaScript for interactivity.</p>
+            <span class="tag">Web</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section alt-bg">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+
+        <article class="timeline-item">
+          <h3>BSc in Information Systems</h3>
+          <p class="timeline-meta">Wollo University, Kombolcha Institute of Technology · 2023 – Present</p>
+          <p>Currently in 3rd year, studying web development, databases, and system analysis.</p>
+        </article>
+
+        <article class="timeline-item">
+          <h3>High School</h3>
+          <p class="timeline-meta">Your High School Name · Graduated 2023</p>
+          <p>Completed secondary education with a focus on natural sciences.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section id="achievements" class="section">
+      <h2 class="section-title">Achievements</h2>
+      <ul class="achievements-list">
+        <li>Completed Internet Programming I coursework</li>
+        <li>Built a library registration website prototype</li>
+        <li>Designed a library management system database</li>
+        <li>Participated in university coding activities</li>
+      </ul>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section alt-bg">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>📱 <a href="tel:+251987876831">0987 876 831</a></p>
+          <p>💬 Telegram: <a href="https://t.me/zerodistract" target="_blank" rel="noopener">@zerodistract</a></p>
+          <p>💻 <a href="https://github.com/beimnet68-star" target="_blank" rel="noopener">github.com/beimnet68-star</a></p>
+          <p>📍 Kombolcha, Ethiopia</p>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required minlength="2" placeholder="Your name" />
+            <small class="error" id="nameError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+            <small class="error" id="emailError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Write your message..."></textarea>
+            <small class="error" id="messageError"></small>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-success" id="formSuccess"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Beimnet Ashenafi · Built with HTML, CSS &amp; JavaScript</p>
+    <p>Wollo University, Kombolcha Institute of Technology</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html> 
